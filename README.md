@@ -1,5 +1,9 @@
 # Grammar-Scoring-Engine
 
+Final Kaggle score: 0.5029 (started at 0.7455)
+
+This project was built step by step, testing every idea before keeping it.
+
 ## Competition in Kaggle
 
 ## Problem to be solved 
@@ -85,9 +89,19 @@ Pearson = 0.79
 ***Extra Trees performed better than Random Forest on the initial validation split. However, its training RMSE of 0 indicated possible overfitting. A less-complex Extra Trees model performed worse. Cross-validation was then used to check whether the performance was consistent. It achieved RMSE = 0.76 and Pearson = 0.79. Based on the more reliable cross-validation results, Random Forest was selected as the final model.***
 
 
----checkpoint----
+-------
+-------
 
 
+
+Results
+Step	What was added	Kaggle score (lower is better)
+1	31 audio features + Extra Trees	0.7455
+2	+ simple text features from Whisper transcripts	0.6077
+3	+ sentence embeddings (MiniLM, shrunk with PCA to 20 numbers)	0.5706
+4	+ blend of Extra Trees, Ridge and SVR	0.5434
+5	+ GPT-2 fluency scores	0.5237
+6	+ CoLA grammar-acceptability scores	0.5029
 
 
 
