@@ -1,7 +1,7 @@
 # Grammar-Scoring-Engine Competition in Kaggle
 
 ## Problem to be solved 
-- automated Grammar score based on audio files
+- automated Grammar score based on spoken audio files
 - teach  model how to evaluate English speech
 
 Given:
