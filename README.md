@@ -32,7 +32,9 @@ Note - compute task relevant metrics in your notebook to benchmark model perform
 Load datasets
 
 import pandas as pd
+
 train_df = pd.read_csv('/kaggle/input/shl-hiring-assessment-2026/train.csv')
+
 test_df = pd.read_csv('/kaggle/input/shl-hiring-assessment-2026/test.csv')
 
 ## EXPLORATION + inference
