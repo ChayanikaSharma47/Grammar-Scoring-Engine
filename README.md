@@ -50,11 +50,10 @@ Load datasets
 
 ### 31 acoustic features extracted
 
-**Training - Random Forest + 31 Acoustic Features**
+**Random Forest + 31 Acoustic Features**
 
-Random Forest RMSE  = 0.74
-Random Forest Pearson = 0.84
-Training RMSE: 0.2987
+Validation RMSE  = 0.74
+Validation Pearson = 0.84
 
 ***Trial 1 Public Score: 0.7494***
 
@@ -66,18 +65,29 @@ Training RMSE: 0.2987
 Validation RMSE: 0.6813
 Validation Pearson: 0.8662
 
+Lower RMSE = better.
+Higher Pearson = better.
 Hence, better than Random Forest.
-But Training RMSE = 0.0 = **Overfitting**
-Check with less complex model of Extra Trees - RMSE increases
-Hence, keep earlier Extra Trees model
 
-### Cross Validation
+
+But Training RMSE = 0.0 
+**Training RMSE = 0 indicates the model fits the training data almost perfectly, suggesting possible overfitting.**
+
+Check with less complex model of Extra Trees - RMSE increases
+
+### The less-complex Extra Trees model had higher RMSE, so the original Extra Trees model performed better on this validation split.
+
+## Cross Validation
 
 RMSE = 0.76
 Pearson = 0.79
 
-hence = Extra trees is not kept
-go back to Random forest model of trial 1
+***Extra Trees performed better than Random Forest on the initial validation split. However, its training RMSE of 0 indicated possible overfitting. A less-complex Extra Trees model performed worse. Cross-validation was then used to check whether the performance was consistent. It achieved RMSE = 0.76 and Pearson = 0.79. Based on the more reliable cross-validation results, Random Forest was selected as the final model.***
+
+
+
+
+
 
 
 
