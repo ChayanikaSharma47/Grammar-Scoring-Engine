@@ -31,25 +31,24 @@ Note - compute task relevant metrics in your notebook to benchmark model perform
 -----
 Load datasets
 
-import pandas as pd
-
-train_df = pd.read_csv('/kaggle/input/shl-hiring-assessment-2026/train.csv')
-
-test_df = pd.read_csv('/kaggle/input/shl-hiring-assessment-2026/test.csv')
+        import pandas as pd
+        
+        train_df = pd.read_csv('/kaggle/input/shl-hiring-assessment-2026/train.csv')
+        
+        test_df = pd.read_csv('/kaggle/input/shl-hiring-assessment-2026/test.csv')
 
 ## EXPLORATION + inference
 
 - Datasets do not have null values
 - duration has only a weak relationship with the score Pearson correlation = 0.087
 - scores range from 0 to 5 and have half point values - Use Regression
-- Baseline RMSE       = 1.36
+- Baseline RMSE = 1.36
 
 ## TRIAL 1
 
 **Continuous values = Regression will be used**
 
 ### 31 acoustic features extracted
-- 
 
 **Training - Random Forest + 31 Acoustic Features**
 
