@@ -68,6 +68,18 @@ Validation Pearson: 0.8662
 
 Hence, better than Random Forest.
 But Training RMSE = 0.0 = **Overfitting**
+Check with less complex model of Extra Trees - RMSE increases
+Hence, keep earlier Extra Trees model
+
+### Cross Validation
+
+RMSE = 0.76
+Pearson = 0.79
+
+hence = Extra trees is not kept
+go back to Random forest model of trial 1
+
+
 
 
 
