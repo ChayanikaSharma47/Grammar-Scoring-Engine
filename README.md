@@ -85,6 +85,8 @@ Pearson = 0.79
 ***Extra Trees performed better than Random Forest on the initial validation split. However, its training RMSE of 0 indicated possible overfitting. A less-complex Extra Trees model performed worse. Cross-validation was then used to check whether the performance was consistent. It achieved RMSE = 0.76 and Pearson = 0.79. Based on the more reliable cross-validation results, Random Forest was selected as the final model.***
 
 
+---checkpoint----
+
 
 
 
